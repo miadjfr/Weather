@@ -6,6 +6,8 @@ const btnEl = document.getElementById("btn");
 
 const weatherEl = document.querySelector(".weather");
 
+const bodyEl =document.querySelector(".body")
+
 btnEl.addEventListener("click", () => {
   const city = inputCityEl.value;
   console.log(city);
@@ -34,5 +36,14 @@ async function getWeathrData(city) {
     weatherEl.querySelector(
       ".icon"
     ).innerHTML = `<img src="http://openweathermap.org/img/wn/${icon}.png" >`;
+
+    if (data.weather[0].description == "snow") {
+        bodyEl.style.backgroundImage = "url(./img/cloudly.jpg)"
+
+
+    }else {
+        bodyEl.style.backgroundImage = "url(./img/suuny.jpg)"
+    }
+
   } catch (error) {}
 }

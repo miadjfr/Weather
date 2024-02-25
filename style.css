@@ -2,8 +2,8 @@
   box-sizing: border-box;
 }
 
-body {
-margin: 0;
+.body {
+  margin: 0;
   background-image: url(./img/suuny.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -23,7 +23,6 @@ margin: 0;
   max-width: 700px;
   border-radius: 3px;
 
-
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -39,7 +38,7 @@ margin: 0;
   margin: 20px;
 }
 .inputCity {
-    width: 70%;
+  width: 70%;
   margin-right: 10px;
   border: none;
   border-radius: 3px;
@@ -63,73 +62,59 @@ margin: 0;
   border-radius: 3px;
   width: 30%;
 }
-.btn:hover{
-    box-shadow: 0 0 5px #2222227c;
+.btn:hover {
+  box-shadow: 0 0 5px #2222227c;
 }
 
-.weather{
-    display: none;
-
-
+.weather {
+  display: none;
 }
-.icon{
-    margin: 20px;
+.icon {
+  margin: 20px;
 }
-.deg{
-    font-size: 45px;
-    font-weight: 700;
-    color: white ;
+.deg {
+  font-size: 45px;
+  font-weight: 700;
+  color: white;
 }
-.durum{
-    font-weight: 100;
-    font-size: 20px;
-    opacity: 70%;
-    color:rgb(255, 255, 255);
-
+.durum {
+  font-weight: 100;
+  font-size: 20px;
+  opacity: 70%;
+  color: rgb(255, 255, 255);
 }
 
-.details{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-
-
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
 }
 .details > div {
-
-    background-color: rgba(240, 248, 255, 0.164);
-    margin: 10px;
-    flex: 1;
-    padding: 20px 5px;
-    color: aliceblue;
-    min-height: 45px;
-    border-radius: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-
+  background-color: rgba(240, 248, 255, 0.164);
+  margin: 10px;
+  flex: 1;
+  padding: 20px 5px;
+  color: aliceblue;
+  min-height: 45px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media(max-width : 765px){
-    .city{
-
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 100px;
-
-
-    }
-    .inputCity{
-        width: 100%;
-        margin-bottom: 10px;
-
-    }
-    .btn{
-        justify-content: center;
-        text-align: center;
-
-    }
+@media (max-width: 765px) {
+  .city {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  .inputCity {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .btn {
+    justify-content: center;
+    text-align: center;
+  }
 }
